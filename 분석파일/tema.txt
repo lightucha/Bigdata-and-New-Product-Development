@@ -1,0 +1,31 @@
+
+items/ranked_item	
+	has_more_comments (T/F)
+ 	like_count
+	has_liked
+	original_height
+	original_width
+	pk
+
+		~caption
+			 pk
+			 media_id(items의 pk랑 같음)
+			 ~text (해시태그 및 코멘트)
+
+                           ~location
+			~address
+				lat
+				lng
+				name
+				shortname
+
+		~image_version2
+			~(dictionary에서 url 정보만 가져오기)
+
+		~preview_comments
+			~text (맞팔 댓글 맥스 2개)
+		
+		~comments
+			~text (맥스 2개 나옴? 왜죠)
+
+		~comments_count
